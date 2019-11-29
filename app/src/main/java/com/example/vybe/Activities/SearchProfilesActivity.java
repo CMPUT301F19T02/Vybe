@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Activities;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,9 @@ import android.util.Log;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.example.vybe.Adapters.ProfileAdapter;
 import com.example.vybe.Models.User;
+import com.example.vybe.R;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;

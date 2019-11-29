@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vybe.Activities.MyRequestsActivity;
 import com.example.vybe.Models.User;
+import com.example.vybe.R;
 
 import java.util.ArrayList;
 

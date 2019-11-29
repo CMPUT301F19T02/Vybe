@@ -1,9 +1,8 @@
-package com.example.vybe.AddEdit;
+package com.example.vybe.Controllers;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -12,11 +11,11 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.example.vybe.Activities.AddEditVibeEventActivity;
 import com.example.vybe.Models.SocSit;
 import com.example.vybe.Models.Vibe;
 import com.example.vybe.Models.VibeEvent;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;

@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Adapters;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -9,7 +9,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.vybe.Fragments.FollowersFragment;
+import com.example.vybe.Fragments.FollowingFragment;
 import com.example.vybe.Models.User;
+import com.example.vybe.R;
 
 public class ConnectionsPageAdapter extends FragmentPagerAdapter {
 

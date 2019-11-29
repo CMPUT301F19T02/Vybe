@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.vybe.Models.User;
+import com.example.vybe.Adapters.ProfileAdapter;
+import com.example.vybe.R;
+import com.example.vybe.Activities.ViewProfileActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -22,18 +24,18 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.ArrayList;
 
 /**
- * A simple FollowingFragment subclass.
+ * A simple FollowersFragment subclass.
  */
-public class FollowingFragment extends Fragment {
+public class FollowersFragment extends Fragment {
 
-    private ArrayList<User> followingList;
+    private ArrayList<User> followersList;
     private ProfileAdapter profileAdapter;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private User user;
 
-    private RecyclerView followingRecyclerView;
+    private RecyclerView followerRecyclerView;
 
-    public FollowingFragment(User user) {
+    public FollowersFragment(User user) {
         this.user = user;
     }
 
@@ -41,39 +43,39 @@ public class FollowingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_following, container, false);
+        return inflater.inflate(R.layout.fragment_followers, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        followingRecyclerView = view.findViewById(R.id.following_list);
+        followerRecyclerView = view.findViewById(R.id.followers_list);
 
-        followingList = new ArrayList<>();
-        profileAdapter = new ProfileAdapter(R.layout.user_item, followingList);
+        followersList = new ArrayList<>();
+        profileAdapter = new ProfileAdapter(R.layout.user_item, followersList);
         profileAdapter.setOnItemClickLister(new ProfileAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                User user = followingList.get(position);
+                User user = followersList.get(position);
                 Intent intent = new Intent(getContext(), ViewProfileActivity.class);
                 intent.putExtra("user", user);
                 startActivity(intent);
             }
         });
 
-        followingRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
-        followingRecyclerView.setAdapter(profileAdapter);
+        followerRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+        followerRecyclerView.setAdapter(profileAdapter);
 
-        if (user.getFollowing() != null){
-            for (String uid: user.getFollowing()){
+        if (user.getFollowers() != null){
+            for (String uid: user.getFollowers()){
                 db.collection("Users")
                         .document(uid)
                         .get()
                         .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot doc) {
-                                User following = doc.toObject(User.class);
-                                following.setUserID(uid);
-                                followingList.add(following);
+                                User follower = doc.toObject(User.class);
+                                follower.setUserID(uid);
+                                followersList.add(follower);
                                 profileAdapter.notifyDataSetChanged();
                             }
                         });

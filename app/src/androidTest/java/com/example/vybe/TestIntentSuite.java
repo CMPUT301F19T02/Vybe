@@ -1,4 +1,8 @@
 package com.example.vybe;
+import com.example.vybe.Activities.CreateAccountActivity;
+import com.example.vybe.Activities.MyVibesActivity;
+import com.example.vybe.Activities.ViewProfileActivity;
+
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

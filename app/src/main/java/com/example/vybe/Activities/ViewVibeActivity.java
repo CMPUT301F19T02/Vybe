@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,8 +9,10 @@ import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
+import com.example.vybe.Fragments.MapFragment;
 import com.example.vybe.Models.SocSit;
 import com.example.vybe.Models.VibeEvent;
+import com.example.vybe.R;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;

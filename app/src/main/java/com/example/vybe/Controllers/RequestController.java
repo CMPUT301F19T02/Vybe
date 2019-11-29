@@ -1,8 +1,10 @@
-package com.example.vybe;
+package com.example.vybe.Controllers;
 
 import android.widget.Toast;
 
+import com.example.vybe.Activities.MyRequestsActivity;
 import com.example.vybe.Models.User;
+import com.example.vybe.Activities.ViewProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;

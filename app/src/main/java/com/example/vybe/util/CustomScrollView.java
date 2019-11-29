@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.util;
 
 import android.content.Context;
 import android.util.AttributeSet;

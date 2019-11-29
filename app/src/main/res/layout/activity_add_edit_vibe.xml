@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.example.vybe.CustomScrollView
+<com.example.vybe.util.CustomScrollView
     android:id="@+id/scrollView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -62,13 +62,13 @@
 
             <fragment
                 android:id="@+id/soc_sit_field_fragment"
-                android:name="com.example.vybe.AddEdit.SocSitFieldFragment"
+                android:name="com.example.vybe.Fragments.SocSitFieldFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <fragment
                 android:id="@+id/image_field_fragment"
-                android:name="com.example.vybe.AddEdit.ImageFieldFragment"
+                android:name="com.example.vybe.Fragments.ImageFieldFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pick_image" />
@@ -95,7 +95,7 @@
 
             <fragment
                 android:id="@+id/add_edit_map_fragment"
-                android:name="com.example.vybe.MapFragment"
+                android:name="com.example.vybe.Fragments.MapFragment"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
 
@@ -112,4 +112,4 @@
 
     </LinearLayout>
 
-</com.example.vybe.CustomScrollView>
+</com.example.vybe.util.CustomScrollView>

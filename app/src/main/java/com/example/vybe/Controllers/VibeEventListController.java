@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Controllers;
 
 import com.example.vybe.Models.User;
 import com.example.vybe.Models.VibeEvent;

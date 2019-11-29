@@ -1,8 +1,7 @@
-package com.example.vybe;
+package com.example.vybe.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -10,23 +9,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import com.example.vybe.Models.User;
+import com.example.vybe.Adapters.MyVibesAdapter;
 import com.example.vybe.Models.VibeEvent;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
+import com.example.vybe.R;
+import com.example.vybe.Controllers.VibeEventListController;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 /**
  * SocialActivity displays the screen for a user to view a list of their followers' vibe events

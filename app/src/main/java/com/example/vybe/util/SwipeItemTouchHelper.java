@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,8 +13,10 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vybe.AddEdit.AddEditVibeEventActivity;
+import com.example.vybe.Adapters.MyVibesAdapter;
+import com.example.vybe.Activities.AddEditVibeEventActivity;
 import com.example.vybe.Models.VibeEvent;
+import com.example.vybe.R;
 
 /**
  * SwipeItemTouchHelper includes the Edit and Delete swipe functionality for a MyVibesAdapter item.

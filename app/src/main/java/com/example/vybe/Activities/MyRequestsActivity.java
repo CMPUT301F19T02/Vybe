@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.vybe.Models.User;
+import com.example.vybe.Adapters.ProfileAdapter;
+import com.example.vybe.R;
+import com.example.vybe.Controllers.RequestController;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;

@@ -1,9 +1,6 @@
-package com.example.vybe.AddEdit;
+package com.example.vybe.Activities;
 
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,32 +10,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.CustomTarget;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.target.ViewTarget;
-import com.bumptech.glide.request.transition.Transition;
-import com.example.vybe.MapFragment;
+import com.example.vybe.Fragments.LocationSelectionDialog;
+import com.example.vybe.Fragments.SocSitFieldFragment;
+import com.example.vybe.Fragments.VibeCarouselDialogFragment;
+import com.example.vybe.Controllers.AddEditController;
+import com.example.vybe.Fragments.ImageFieldFragment;
+import com.example.vybe.Fragments.MapFragment;
 import com.example.vybe.Models.SocSit;
 import com.example.vybe.Models.Vibe;
 import com.example.vybe.R;
 import com.example.vybe.Models.VibeEvent;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
-import java.io.ByteArrayOutputStream;
-import java.util.HashMap;
 import java.util.Locale;
 
 import static com.example.vybe.util.Constants.REASON_FIELD_MAX_WORD_COUNT;

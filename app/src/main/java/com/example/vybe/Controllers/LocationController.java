@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Controllers;
 
 import android.Manifest;
 import android.app.Activity;

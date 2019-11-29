@@ -11,6 +11,7 @@ import androidx.test.uiautomator.UiObject;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 
+import com.example.vybe.Activities.MainActivity;
 import com.example.vybe.Helpers.ClickOnInternalView;
 import com.example.vybe.Helpers.RecyclerViewItemCountAssertion;
 import com.example.vybe.Helpers.RecyclerViewMatcher;

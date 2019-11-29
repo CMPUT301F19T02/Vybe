@@ -1,18 +1,15 @@
-package com.example.vybe;
+package com.example.vybe.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.View;
 
+import com.example.vybe.Adapters.ConnectionsPageAdapter;
 import com.example.vybe.Models.User;
+import com.example.vybe.R;
 import com.google.android.material.tabs.TabLayout;
 
 /**

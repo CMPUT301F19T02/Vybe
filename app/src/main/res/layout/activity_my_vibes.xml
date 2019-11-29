@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyVibesActivity">
+    tools:context=".Activities.MyVibesActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_vibes_toolbar"
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/vibe_filter_fragment"
-        android:name="com.example.vybe.VibeFilterFragment"
+        android:name="com.example.vybe.Fragments.VibeFilterFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/my_vibes_toolbar"

@@ -18,37 +18,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ConnectionsActivity"
+            android:name=".Activities.ConnectionsActivity"
             android:screenOrientation="nosensor"/>
         <activity
-            android:name=".MyRequestsActivity"
+            android:name=".Activities.MyRequestsActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".SearchProfilesActivity"
+            android:name=".Activities.SearchProfilesActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".SocialActivity"
+            android:name=".Activities.SocialActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".ViewProfileActivity"
+            android:name=".Activities.ViewProfileActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".CreateAccountActivity"
+            android:name=".Activities.CreateAccountActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".ViewVibeActivity"
+            android:name=".Activities.ViewVibeActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".AddEdit.AddEditVibeEventActivity"
+            android:name=".Activities.AddEditVibeEventActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".MyVibesActivity"
+            android:name=".Activities.MyVibesActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".MapViewActivity"
+            android:name=".Activities.MapViewActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

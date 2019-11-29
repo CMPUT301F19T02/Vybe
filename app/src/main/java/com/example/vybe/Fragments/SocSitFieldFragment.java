@@ -1,4 +1,4 @@
-package com.example.vybe.AddEdit;
+package com.example.vybe.Fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,7 +27,7 @@ public class SocSitFieldFragment extends Fragment {
     private Spinner socSitDropdown;
     private ImageButton clearBtn;
 
-    interface OnSocSitSelectedListener {
+    public interface OnSocSitSelectedListener {
         void onSocSitSelected(SocSit socSit);
     }
 

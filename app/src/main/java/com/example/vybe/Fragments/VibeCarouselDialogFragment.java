@@ -1,4 +1,4 @@
-package com.example.vybe.AddEdit;
+package com.example.vybe.Fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

@@ -1,4 +1,4 @@
-package com.example.vybe;
+package com.example.vybe.Activities;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -11,7 +11,6 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -24,10 +23,14 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vybe.AddEdit.AddEditVibeEventActivity;
 import com.example.vybe.Models.User;
 import com.example.vybe.Models.Vibe;
 import com.example.vybe.Models.VibeEvent;
+import com.example.vybe.Adapters.MyVibesAdapter;
+import com.example.vybe.R;
+import com.example.vybe.util.SwipeItemTouchHelper;
+import com.example.vybe.Controllers.VibeEventListController;
+import com.example.vybe.Fragments.VibeFilterFragment;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

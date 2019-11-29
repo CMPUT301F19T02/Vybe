@@ -1,4 +1,4 @@
-package com.example.vybe.AddEdit;
+package com.example.vybe.Fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,7 +33,7 @@ public class ImageFieldFragment extends Fragment {
     private Bitmap imageBitmap;
     private Button removeImageBtn;
 
-    interface OnImageSelectedListener {
+    public interface OnImageSelectedListener {
         void onImageSelected(Bitmap selectedImageBitmap);
     }
 

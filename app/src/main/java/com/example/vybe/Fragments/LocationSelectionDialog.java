@@ -1,4 +1,4 @@
-package com.example.vybe.AddEdit;
+package com.example.vybe.Fragments;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -19,7 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.example.vybe.LocationController;
+import com.example.vybe.Controllers.LocationController;
 import com.example.vybe.R;
 import com.example.vybe.util.APIKey;
 import com.google.android.gms.common.api.Status;
@@ -27,7 +27,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.RectangularBounds;
-import com.google.android.libraries.places.api.model.TypeFilter;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.android.libraries.places.widget.Autocomplete;
 import com.google.android.libraries.places.widget.AutocompleteActivity;
